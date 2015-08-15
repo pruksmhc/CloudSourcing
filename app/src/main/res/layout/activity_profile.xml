@@ -1,0 +1,35 @@
+<FrameLayout
+    android:id="@+id/profile_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:borderWidth="0dp"
+    android:background="@mipmap/profile_background"
+    tools:context="com.cloudsourcing.android.cloudsourcing.ProfileActivity"
+    >
+<!--The background for the profile-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="335dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:background="@layout/profile_box"/>
+
+    <View
+        android:layout_width="400dp"
+        android:layout_height="7dp"
+        android:layout_marginTop="160dp"
+        android:background="#01579B"/>
+    <View
+        android:layout_width="400dp"
+        android:layout_height="7dp"
+        android:layout_marginTop="500dp"
+        android:background="#01579B"/>
+
+
+
+
+</FrameLayout>

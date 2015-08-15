@@ -1,0 +1,54 @@
+<resources>
+    // App Strings
+    <string name="app_name">CloudSourcing</string>
+    <string name="launcher_activity">LoginActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="parse_app_id">gZM3kq4W5F5MeQz0Sf4Aj32gyHNxUxt1LUE6AdZO</string>
+    <string name="parse_client_key">55CzaPnAjlQC8PQv11EwkfVehyRirrtxfBvwEsZP</string>
+    <string name="facebook_app_id">885252418195406</string>
+
+    // Cloud Fragment Strings
+    <string name="submit_text">Submit</string>
+    <string name="upload_picture_button">Upload a Cloud!</string>
+    <string name="input_hint">What do you see?</string>
+
+    // Menu Strings
+    <string name = "user_profile">"Your Profile</string>
+    <string name = "resume_game">Resume game</string>
+
+
+    // Profile Strings
+    <string name="log_out_button">Log Out</string>
+    <string name="invite_friends_button">Invite Friends</string>
+
+    // Leaderboard Strings
+    <string name="leaderboard">Leaderboard</string>
+    <string name="global_board_tab">Global</string>
+    <string name="friend_board_tab">Friends</string>
+
+    // Ranks
+    <string name="rank_overflow">Cloud God</string>
+    <string name="rank_00">Cloud Gazer</string>
+    <string name="rank_01">Pilot</string>
+    <string name="rank_02">Sky Diver</string>
+    <string name="rank_03">High Stratus</string>
+    <string name="rank_04">Why So Cirrus?</string>
+    <string name="rank_05">Astronaut</string>
+    <string name="rank_06">You Play Too Much</string>
+
+    // Captions
+    <string name="caption_overflow">I am become cloud watcher destroyer of worlds.</string>
+    <string name="caption_00">4/20 Gaze It!</string>
+    <string name="caption_01">Sky High!</string>
+    <string name="caption_02">
+        Fun Fact: Half the jumpers never even make it to the ground...</string>
+    <string name="caption_03">You\'re a high roller now!</string>
+    <string name="caption_04">Man We\'re Such Jokers!</string>
+    <string name="caption_05">Are There Even Clouds in Space?</string>
+    <string name="caption_06">And we love you for it... but seriously get some friends.</string>
+    <string name="title_activity_camera">CameraActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/achievement_box"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/achievement_box_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/achievement_toolbar"
+            android:gravity="center"
+            android:id="@+id/title_achievement"
+            android:text="Earned Achievement"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:id="@+id/achievement_name_text_view"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#039BE5"
+            android:textSize="30dp"
+            tools:text="Beginner's Luck"/>
+
+        <TextView
+            android:id="@+id/achievement_description_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            tools:text="Vote on 200 clouds."/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/achievement_image_view"
+                android:layout_width="200dp"
+                android:layout_height="125dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/achievement_template"/>
+            <TextView
+                android:id="@+id/date_achieved"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="15dp"
+                />
+
+
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.facebook.share.widget.ShareButton
+                android:id="@+id/share_with_friends"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Share"
+
+                />
+
+            <Button
+                android:id="@+id/achievement_okay_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Okay"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

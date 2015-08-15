@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/login_root_view"
+             android:gravity="center"
+             android:orientation="vertical"
+             android:background="@color/kudos_blue"
+             tools:context="com.cloudsourcing.android.cloudsourcing">
+
+    <ImageView
+        android:id="@+id/icon_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/cloudsourcing_logo"/>
+
+
+    <LinearLayout
+        android:id="@+id/login_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="95dp"
+        android:orientation="vertical"
+        android:alpha="0">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <include
+            android:id="@+id/login_loading_view"
+            layout="@layout/loading_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_below="@id/login_button"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</FrameLayout>

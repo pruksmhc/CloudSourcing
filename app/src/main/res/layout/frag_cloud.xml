@@ -1,0 +1,190 @@
+<FrameLayout
+    android:id="@+id/cloud_frag"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gameactivity_background_small2">
+
+    <com.cloudsourcing.android.cloudsourcing.ResultsView
+        android:id="@+id/results_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:alpha="0"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_view">
+
+        <View
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_tool_bar"/>
+
+        <ImageView
+            android:layout_width="1000dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/title"/>
+    </FrameLayout>
+    <!--Toolbar section ends -->
+
+    <!--Make sure the buttons are over the cardview and toolbar-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.cloudsourcing.android.cloudsourcing.CloudImageView
+            android:id="@+id/cloud_image_view"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="8dp"
+            card_view:contentPadding="10dp"/>
+
+
+        <include
+            android:id="@+id/user_input_view"
+            layout="@layout/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/bottom_loading_panel"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="500dp"
+            android:indeterminate="true"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/camera_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="205dp"
+        android:src="@mipmap/camera_icon"
+        android:translationY="-180dp"
+        app:pressedTranslationZ="30dp"
+        fab:backgroundTint="#4FC3F7"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/leadership_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="145dp"
+        android:src="@mipmap/medal_icon"
+        android:translationY="-120dp"
+        app:pressedTranslationZ="30dp"
+        fab:backgroundTint="#4FC3F7"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/actual_profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="85dp"
+        android:src="@mipmap/profile_icon"
+        android:translationY="-60dp"
+        app:pressedTranslationZ="30dp"
+        fab:backgroundTint="#4FC3F7"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="25dp"
+        android:src="@mipmap/menu_icon"
+        app:pressedTranslationZ="30dp"
+        fab:backgroundTint="#4FC3F7"
+        />
+
+    <RelativeLayout
+        android:id="@+id/load_cloud_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:paddingTop="80dp">
+
+        <ImageView
+            android:id="@+id/load_cloud"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="40dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/progress_points_cloud"/>
+
+        <TextView
+            android:id="@+id/load_cloud_textview"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/load_cloud"
+            android:layout_alignLeft="@+id/load_cloud"
+            android:layout_alignRight="@+id/load_cloud"
+            android:layout_alignTop="@+id/load_cloud"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/next_button"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/next_button"
+        android:scaleType="centerInside"
+        android:text="NEXT"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:text="RESET CLOUDS"
+        android:visibility="visible"
+        android:background = "@android:color/transparent"
+        android:textColor="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/reset_achievements_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:text="RESET achieves"
+        android:textColor="@android:color/transparent"
+        android:visibility="visible"
+        android:background = "@android:color/transparent"/>
+
+</FrameLayout>

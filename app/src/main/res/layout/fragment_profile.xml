@@ -1,0 +1,171 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--TOOLBAR SECTION - "CLOUDSOURCING OVER BLUE TOOLBAR -->
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        >
+        <!--TOOLBAR SECTION - "Dynamically change the width+height of the toolbar -->
+
+        <ImageView
+            android:layout_width="1000dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/blue_tool_bar"
+            android:src="@mipmap/title"/>
+    </FrameLayout>
+
+    <!--The border and the profile picture -->
+
+    <com.cloudsourcing.android.cloudsourcing.RoundProfilePictureView
+        android:id="@+id/fb_profile_image_view"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+
+        />
+
+    <!--The contents of the box -->
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fb_profile_image_view"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:fontFamily="Avenir"
+        tools:text="Name Here"
+        android:text="Name Here!"
+        android:textSize="35dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/rank_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/name_text_view"
+        android:fontFamily="Avenir"
+        android:gravity="center_horizontal"
+        tools:text="Rank Here"
+        android:textSize="30dp"/>
+
+
+    <View
+        android:id="@+id/top_line"
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rank_text_view"
+        android:background="@android:color/darker_gray"/>
+
+
+    <TextView
+        android:id="@+id/points_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_line"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="Avenir"
+        android:text="30299"
+        android:textSize="25dp"/>
+
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bottom_line"
+        android:layout_below="@id/points_text_view"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/achievements"
+        android:fontFamily="Avenir"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/bottom_line"
+        android:text="Achievements"
+        android:textSize="15dp"/>
+
+    <!--The achievements the user gains. -->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/achievement_recycler_view"
+        android:layout_below="@id/achievements"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/achievement_recycler_view"
+        >
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/log_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:src="@mipmap/log_out_icon"
+            android:translationX="80dp"
+            app:elevation="12dp"
+            app:pressedTranslationZ="30dp"
+            fab:backgroundTint="#039BE5"
+            />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/invite_friends_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:src="@mipmap/invite_friends_icon"
+            android:translationX="-80dp"
+            app:elevation="12dp"
+            app:pressedTranslationZ="30dp"
+            fab:backgroundTint="#039BE5"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/profile_functionality_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:src="@mipmap/profile_functionality_icon"
+            app:elevation="12dp"
+            app:pressedTranslationZ="30dp"
+            fab:backgroundTint="#039BE5"
+            />
+
+
+    </FrameLayout>
+
+</RelativeLayout>
+
+
+

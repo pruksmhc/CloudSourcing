@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.4.2"
+  },
+  "applications": {
+    "Cloudsourcing": {
+      "applicationId": "gZM3kq4W5F5MeQz0Sf4Aj32gyHNxUxt1LUE6AdZO",
+      "masterKey": "6cQKkDombYiPpN5JbpZk9DVNDwtk8slb2Al6NC8i"
+    },
+    "_default": {
+      "link": "Cloudsourcing"
+    }
+  }
+}
